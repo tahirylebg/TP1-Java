@@ -12,6 +12,7 @@ public class CommandManager {
     register(new JokeCommand());
     register(new PollCommand());
     register(new HelpCommand(this));
+    register(new MeteoCommand());
 }
 
     // Permet d'ajouter une commande à la liste
