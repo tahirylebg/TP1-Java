@@ -8,8 +8,11 @@ public class CommandManager {
     private final Map<String, ICommand> commands = new HashMap<>(); // Stocke les commandes par nom
 
     public CommandManager() {
-        register(new PingCommand());
-    }
+    register(new PingCommand());
+    register(new JokeCommand());
+    register(new PollCommand());
+    register(new HelpCommand(this));
+}
 
     // Permet d'ajouter une commande à la liste
     public void register(ICommand command) {
